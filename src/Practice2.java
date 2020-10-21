@@ -122,5 +122,15 @@ public class Practice2 {
         directionsArray.add(Directions.RIGHT);
 
         multipleMoves(coordinates, directionsArray);
+
+        Rectangle rect = new Rectangle(4,10);
+        Square square = new Square(2);
+        Circle circle = new Circle(5);
+        System.out.println("Rectangle Area: " + rect.area());
+        System.out.println("Rectangle Perimeter: " + rect.perimeter());
+        System.out.println("Square Area: " + square.area());
+        System.out.println("Square Perimeter: " + square.perimeter());
+        System.out.println("Circle Area: " + circle.area());
+        System.out.println("Circle Perimeter: " + circle.perimeter());
     }
 }
