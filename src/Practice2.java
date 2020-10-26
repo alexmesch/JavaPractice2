@@ -123,14 +123,16 @@ public class Practice2 {
 
         multipleMoves(coordinates, directionsArray);
 
-        Rectangle rect = new Rectangle(4,10);
-        Square square = new Square(2);
-        Circle circle = new Circle(5);
-        System.out.println("Rectangle Area: " + rect.area());
-        System.out.println("Rectangle Perimeter: " + rect.perimeter());
-        System.out.println("Square Area: " + square.area());
-        System.out.println("Square Perimeter: " + square.perimeter());
-        System.out.println("Circle Area: " + circle.area());
-        System.out.println("Circle Perimeter: " + circle.perimeter());
+        Shape shape  = new Rectangle(5,4);
+        System.out.println("Rectangle Area: " + shape.area());
+        System.out.println("Rectangle Perimeter: " + shape.perimeter());
+
+        shape = new Square(3);
+        System.out.println("Square Area: " + shape.area());
+        System.out.println("Square Perimeter: " + shape.perimeter());
+
+        shape = new Circle(3);
+        System.out.println("Circle Area: " + shape.area());
+        System.out.println("Circle Perimeter: " + shape.perimeter());
     }
 }
