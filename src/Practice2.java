@@ -105,8 +105,7 @@ public class Practice2 {
         System.out.println("Change coordinates: ");
         changeCoordinates(coordinates, Directions.LEFT);
 
-        coordinates.setX(0);
-        coordinates.setY(0);
+        Coordinates location = new Coordinates(0,0);
 
         ArrayList<Directions> directionsArray = new ArrayList<>();
         directionsArray.add(Directions.UP);
@@ -121,7 +120,7 @@ public class Practice2 {
         directionsArray.add(Directions.DOWN);
         directionsArray.add(Directions.RIGHT);
 
-        multipleMoves(coordinates, directionsArray);
+        multipleMoves(location, directionsArray);
 
         Rectangle rect = new Rectangle(4,10);
         Square square = new Square(2);
